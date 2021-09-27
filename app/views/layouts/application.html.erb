@@ -10,6 +10,29 @@
   </head>
 
   <body>
+  <header class='top-page-header'>
+     <h1 class="grid-6"> WorldHeritage In South America</h1>
+      <div class="user_nav">
+       <ul class='lists-right'>
+         <%# <% if user_signed_in? %>
+          <%# <li>
+              <%= link_to "#{current_user.nick_name}さん",user_path(current_user), class: "sign" %>
+              <%# <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "sign-right" %>
+          <%# </li> %> 
+         <%# <% else %>
+          <%# <li>
+              <%= link_to 'ログイン', user_session_path, class: "sign" %>
+              <%# <%= link_to '新規登録', new_user_registration_path, class: "sign-right" %>
+          <%# </li> %> 
+         <%# <% end %> 
+       </ul>
+      </div>
+    </header>
     <%= yield %>
+    <footer>
+      <p>
+        WorldHeritage In South America
+      </p>
+    </footer>
   </body>
 </html>

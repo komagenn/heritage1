@@ -17,8 +17,8 @@
 
 |Column                |Type       |Options    |
 |------ ---------------|-----------|-----------|
-| 後で変えなあかん　　　　　|string     |null: false|
-|user                  |references      |null: false|
+| heritage             |references |null: false|
+|user                  |references |null: false|
 
 
 This README would normally document whatever steps are necessary to get the

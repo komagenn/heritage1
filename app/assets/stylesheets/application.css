@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+ .top-page-header{
+  width: 100%;
+  text-align: center;
+  
+}
+.header.header div.header__bar.row div.grid-6 a.post{
+  height:40px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.grid-6{
+  font-size: 50px;
+  background-color: crimson;
+  transform: skewY(-8deg);
+  display: flex;
+  justify-content: center;
+}
+.user_nav{
+  float:right;
+  margin-right:80px;
+}
+.lists-right{
+  list-style: none;
+}
+
+.sign{
+  text-decoration: none;
+ }
+ .sign:hover{
+  color:darkorange;
+}
+.sign-right{
+  margin-left:10px;
+  text-decoration: none;
+}
+.sign-right:hover{
+  color:darkorange;
+}
+ 
