@@ -4,12 +4,11 @@
 
 |Column                |Type       |Options    |
 |------ ---------------|-----------|-----------|
-|full_width_first_name |string     |null: false|
-|full_width_last_name  |string     |null: false|
-|first_name_kana       |string     |null: false|
-|last_name_kana        |string     |null: false|
+|nick_name             |string     |null: false|
+|email                 |string     |null: false|
 |encrypted_password    |string     |null: false|
 
+has_many:favorite
 ## heritageテーブル
 
 
@@ -20,6 +19,7 @@
 | heritage             |references |null: false|
 |user                  |references |null: false|
 
+belongs_to:user
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

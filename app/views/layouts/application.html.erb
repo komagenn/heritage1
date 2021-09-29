@@ -7,24 +7,58 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <style type="text/css">
+#photo {
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#photo img {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+</style>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var setImg = '#photo';
+    var fadeSpeed = 1600;
+    var switchDelay = 5000;
+
+    $(setImg).children('img').css({opacity:'0'});
+    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+    setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+    },switchDelay);
+});
+</script>
+
   </head>
 
   <body>
   <header class='top-page-header'>
-     <h1 class="grid-6"> WorldHeritage In South America</h1>
+     <h1 class="grid-6"><%= link_to 'WorldHeritage In South America',"/"%></h1>
       <div class="user_nav">
        <ul class='lists-right'>
-         <%# <% if user_signed_in? %>
-          <%# <li>
+         <% if user_signed_in? %>
+           <li>
               <%= link_to "#{current_user.nick_name}さん",user_path(current_user), class: "sign" %>
-              <%# <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "sign-right" %>
-          <%# </li> %> 
-         <%# <% else %>
-          <%# <li>
+              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "sign-right" %>
+           </li>  
+         <% else %>
+           <li>
               <%= link_to 'ログイン', user_session_path, class: "sign" %>
-              <%# <%= link_to '新規登録', new_user_registration_path, class: "sign-right" %>
-          <%# </li> %> 
-         <%# <% end %> 
+              <%= link_to '新規登録', new_user_registration_path, class: "sign-right" %>
+           </li> 
+         <% end %> 
        </ul>
       </div>
     </header>
