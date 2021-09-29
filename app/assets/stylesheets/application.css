@@ -25,10 +25,11 @@
 }
 .grid-6{
   font-size: 50px;
-  background-color: crimson;
+  background-color: greenyellow;
   transform: skewY(-8deg);
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 .user_nav{
   float:right;
