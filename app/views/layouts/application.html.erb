@@ -45,7 +45,9 @@ $(function(){
 
   <body>
   <header class='top-page-header'>
-     <h1 class="grid-6"><%= link_to 'WorldHeritage In South America',"/"%></h1>
+   <div class="gird-5">
+     <h1 class="grid-6"><%= link_to image_tag('moai.jpeg', size: '45x45'),"/"%>WorldHeritage <%= link_to image_tag('moai.jpeg', size: '45x45'),"/"%></h1>
+      <p class="grid-7">In South America</p>
       <div class="user_nav">
        <ul class='lists-right'>
          <% if user_signed_in? %>
@@ -61,7 +63,9 @@ $(function(){
          <% end %> 
        </ul>
       </div>
-    </header>
+    </div>
+
+  </header>
     <%= yield %>
     <footer>
       <p>
