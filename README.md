@@ -7,16 +7,25 @@
 |nick_name             |string     |null: false|
 |email                 |string     |null: false|
 |encrypted_password    |string     |null: false|
-
-has_many:favorite
+has_many :heritages
+has_many :favorite
 ## heritageテーブル
+|Column                |Type       |Options                       |
+|------ ---------------|-----------|------------------------------|
+|name                  |string     |null: false                   |
+|register_id           |integer    |null: false                   |
+|country_id            |integer    |null: false                   |
+|explain               |text       |null: false                   |
+|user                  |references |null: false,foreign_key: true |
 
+
+belongs_to :user
 
 ## favariteテーブル
 
 |Column                |Type       |Options    |
 |------ ---------------|-----------|-----------|
-| heritage             |references |null: false|
+|heritage             |references |null: false|
 |user                  |references |null: false|
 
 belongs_to:user

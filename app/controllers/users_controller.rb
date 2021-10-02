@@ -2,10 +2,14 @@ class UsersController < ApplicationController
   def index
     @user = User.all
   end
-  def create
+  def show
+    @user = User.find(params[:id])
+    @nick_name = @user.nick_name
+    @heritage = @user.heritages
   end
 
-  def show
-    @nick_name = current_user.nick_name
+  private
+  def user_params
+    params.require(:user).permit(:nick_name, :email, :password, :password_confirmation)
   end
 end
