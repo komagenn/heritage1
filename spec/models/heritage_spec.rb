@@ -4,8 +4,8 @@ RSpec.describe Heritage, type: :model do
   before do
     @heritage = FactoryBot.build(:heritage)
   end
-  describe "ユーザー新規登録" do
-    context "新規登録できるとき" do
+  describe "新規投稿" do
+    context "投稿できる場合" do
      it "nameとregister_idとcountry_idとexplainが存在すれば登録できる" do
        expect(@heritage).to be_valid
      end
@@ -13,7 +13,7 @@ RSpec.describe Heritage, type: :model do
   end
  
   
-  describe '投稿できる場合' do
+  describe '投稿できない場合' do
     it 'nameが空では登録できない' do
       @heritage.name = ''
       @heritage.valid?

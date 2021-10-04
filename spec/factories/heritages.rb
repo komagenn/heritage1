@@ -4,5 +4,6 @@ FactoryBot.define do
     register_id  {'4'}
     country_id   {'4'}
     explain      {'あああ'}
+   user
   end
 end

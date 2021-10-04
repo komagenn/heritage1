@@ -3,8 +3,8 @@ class Heritage < ApplicationRecord
   belongs_to :register
   belongs_to :country
   belongs_to :user
-
   has_many_attached :images
+  
   with_options presence: true do
     validates :name
     validates :explain

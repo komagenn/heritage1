@@ -14,10 +14,10 @@
         <%= "#{@user.nick_name}さんの投稿"%>
       </h2>
       <div class="user__card">
-        <% @heritage.each do |heritage| %>
+        <% @heritage.each do |heritage| %> 
         <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
-         <%= render partial: 'heritages/form',locals:{heritage:@heritage} %>
-        <% end %>
+         <%= render partial: 'heritages/heritage',collection: @heritage %> 
+        <% end %> 
       </div>
     </div>
   </div>

@@ -1,0 +1,72 @@
+<%= @country_id %>
+ <% if @country_id=="argentina" %>                  # ーーーーーーーーー
+    <%= form_with model: @heritage, local: true do |f| %>
+       <%# <div class="item-img-content">
+        <div class=image> %>
+          <div id="photo",class="box"> 
+            <% if @heritage.images.attached? %>
+             <div class="heritage_images">
+               <% @heritage.images.each do |image| %>
+               <div class=top>
+               
+                 <%= image_tag @heritage.images[0] %>
+                 <%= image_tag @heritage.images[1] %>
+                 <%= image_tag @heritage.images[2] %>
+                 <%= image_tag @heritage.images[3] %>
+                 <%= image_tag @heritage.images[4] %>
+               
+               </div>
+               <% end %>
+             </div>
+            <% end %>
+          </div>      
+           <%# <%= link_to image_tag @heritage.images[0] %>
+           <%# <%= image_tag (@heritage.]), class:"box" %> 
+           <%# <%= link_to image_tag @heritage.images[1] %> 
+           <%# <%= link_to image_tag @heritage.images[2] %>
+           <%# <%= link_to image_tag @heritage.images[3] %>
+           <%# <%= link_to image_tag @heritage.images[4] %>  
+           </div>  
+         <div id="image-list"></div>
+        <%# </div>
+       </div> %>
+      <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
+      <% if user_signed_in? && current_user.id == @heritage.user_id %>
+        <div class="prototype__manage">
+          <%= link_to "編集する", edit_heritage_path(@heritage.id), method: :get, class: :heritage__btn %>
+          <%= link_to "削除する", heritage_path(@heritage.id), method: :delete, class: :heritage__btn %>
+        </div>
+      <% end %>
+      <div class="item-explain-box">
+        <span><%= @heritage.name %></span>
+      </div>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">世界遺産名</th>
+          <td class="detail-value"><%= (@heritage.name) %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">登録年</th>
+          <td class="detail-value"><%= (@heritage.register.name) %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">国</th>
+          <td class="detail-value"><%= (@heritage.country.name) %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">説明</th>
+          <td class="detail-value"><%= (@heritage.explain) %></td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+     <div class="option">
+       <div class="favorite-btn">
+         <%= image_tag "moai.jpeg" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+         <span>お気に入り 0</span>
+       </div>
+     </div>
+     <% end %>
+   <% end %>
+

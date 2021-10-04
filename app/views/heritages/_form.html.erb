@@ -1,21 +1,9 @@
- <%= form_with model: @heritage, id: 'new_heritage',  local: true do |f| %>
+ <%= form_with model:@heritage, local: true do |f| %>
 
 
     <%= render 'heritages/shared/error_messages', model: f.object %> 
 
-        <span class="indispensable">必須</span>
-      </div>
-      <div class=image>
-      <%= f.file_field :images, name: 'heritage[images][]', id: 'heritage_image' %>
-       <div class="heritages">
-        <% @heritage.images.each do |image| %>
-          <%= image_tag image, class:'images' %>
-         <% end %>
        
-       </div>
-          <div id="image-list"></div>
-        </div>
-      </div>
    
     <div class="new-heritages">
       <div class="weight-bold-text">
@@ -23,6 +11,15 @@
         <span class="indispensable">必須</span>
       </div>
       <%= f.text_area :name, class:"heritages-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      <div class="weight-bold-text">
+       写真
+       <span class="indispensable">必須</span>
+      </div>
+      <div class=image>
+        <%= f.file_field :images, name: 'heritage[images][]', id: 'heritage_image' %>  
+        <div id="image-list"></div>
+       <div class="heritages"></div>  
+      </div>
       <div class="items-explain">
         <div class="weight-bold-text">
           登録年
@@ -48,4 +45,4 @@
       <%= f.submit "投稿する" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
-  <% end %>
+ <% end %> 
