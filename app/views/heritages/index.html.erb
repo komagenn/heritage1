@@ -1,5 +1,12 @@
 <div class="wrapper">
  <div class="next-wrapper">
+  <div class=seach>
+   <h2>カテゴリー検索</h2>
+    <%= search_form_for @q, url: heritages_country_path do |f| %>
+       <%= f.collection_select :country_id_eq, Country.where.not(id: 0), :id, :name %>
+       <%= f.submit '検索', class:"sbtn" %>
+    <% end %>
+  </div> 
   
   <div class="chat">
    <div class=top>
@@ -11,8 +18,9 @@
       <%= image_tag "image104.jpg" %>
     </div>
    </div>
-   
+  
   </div>
+   
   <div class="country-list">
     <div class="country-title"><世界遺産のある南米の国々></div>
    <div class="user__card">
@@ -23,13 +31,13 @@
      <div class="top-weight">
       <div class="weight-contory">
       <div>国名</div>
-      <%=link_to'アルゼンチン共和国🇦🇷',(heritages_argentina_path), class:'heritage-show'%>,
-      <%=link_to'ウルグアイ東方共和国🇺🇾',"/heritages/new/uruguay",class: 'heritage-show'%>
-      <%=link_to'エクアドル共和国🇪🇨',"/heritages/new/ecuador",class: 'heritage-show'%>,<%=link_to'コロンビア共和国🇨🇴',"/heritages/new/columbia",class: 'heritage-show'%>
-      <%=link_to'スリナム共和国🇸🇷',"/heritages/new/suriname",class: 'heritage-show'%>,<%=link_to'チリ共和国🇨🇱',"/heritages/new/chile",class: 'heritage-show'%>
-      <%=link_to'パラグアイ共和国🇵🇾',"/heritages/new/paraguay",class: 'heritage-show'%>, <%=link_to'ブラジル連邦共和国🇧🇷',"/heritages/new/brazil",class: 'heritage-show'%>
-      <%=link_to'ベネズエラ・ボリバル共和国🇻🇪',"/heritages/new/venezuela",class: 'heritage-show'%>,<%=link_to'ペルー共和国🇵🇪',"/heritages/new/peru",class: 'heritage-show'%>
-      <%=link_to'ボリビア共和国🇧🇴',"/heritages/new/bolivia",class: 'heritage-show'%>
+      <%=link_to'アルゼンチン共和国🇦🇷',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=1&commit=%E6%A4%9C%E7%B4%A2", class:'heritage-show'%>,
+      <%=link_to'ウルグアイ東方共和国🇺🇾',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=2&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>,
+      <%=link_to'エクアドル共和国🇪🇨',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=3&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>,<%=link_to'コロンビア共和国🇨🇴',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=4&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>,
+      <%=link_to'スリナム共和国🇸🇷',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=5&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>,<%=link_to'チリ共和国🇨🇱',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=6&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>,
+      <%=link_to'パラグアイ共和国🇵🇾',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=7&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>, <%=link_to'ブラジル連邦共和国🇧🇷',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=8&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>,
+      <%=link_to'ベネズエラ・ボリバル共和国🇻🇪',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=9&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>,<%=link_to'ペルー共和国🇵🇪',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=10&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>
+      <%=link_to'ボリビア共和国🇧🇴',"http://localhost:3000/heritages/country?q%5Bcountry_id_eq%5D=11&commit=%E6%A4%9C%E7%B4%A2",class: 'heritage-show'%>
          
       
      </div>

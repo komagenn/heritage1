@@ -4,9 +4,10 @@ class UsersController < ApplicationController
   end
   def show
     @user = User.find(params[:id])
-    @nick_name = @user.nick_name
+    # @heritage = Heritage.where(user_id: current_user.id).where.not(image: nil)
     @heritage = @user.heritages
   end
+  
 
   private
   def user_params

@@ -1,6 +1,13 @@
-<%= @country_id %>
- <% if @country_id=="argentina" %>                  # ーーーーーーーーー
-    <%= form_with model: @heritage, local: true do |f| %>
+<main class="main">
+ <div class="inner">
+  <div class="heritage__wrapper">
+   <p class="heritage__hedding">
+   <h6 class="country-title"><a href="/"style="text-decoration:none;">🇦🇷</a>アルゼンチン<a href="/"style="text-decoration:none;">🇦🇷</a></h6>
+    <%= @heritage %>
+    <%# <% if @country_id;2 %> 
+                 
+     <%= form_with model: @argentina, local: true do |f| %>
+       <% @heritage.each do |heritage| %>   
        <%# <div class="item-img-content">
         <div class=image> %>
           <div id="photo",class="box"> 
@@ -67,6 +74,8 @@
          <span>お気に入り 0</span>
        </div>
      </div>
-     <% end %>
-   <% end %>
-
+    <% end %>
+   <% end %> 
+  </div>
+ </div>
+</main>

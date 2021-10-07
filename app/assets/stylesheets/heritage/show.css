@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+.inner{
+  width: 1000px;
+  margin: 0 auto;
+
+}
 .item-box {
   background-color: #FFF;
   width: 70vw;
@@ -127,4 +135,122 @@
   margin-right: 5px;
 }
 
+
+/* 各国一覧ページ */
+.heritage__wrapper{
+  min-height: calc(100vh - 161px);
+}
+.heritage__hedding{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.heritage__images{
+  width: 40%;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.heritage__manage{
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.heritage__left{
+  text-decoration: none;
+
+}
+.heritage__left:hover{
+  color:darkorange;
+}
+.heritage__right{
+  margin-left:25px;
+  text-decoration: none;
+}
+.heritage__right:hover{
+  color:darkorange;
+}
+
+.comments_list{
+  list-style-type: square;
+  padding-bottom: 5px;
+}
+
+.comment_user{
+  font-size: 16px;
+  color: #999;
+  text-decoration: underline;
+}
+.tot{
+  background-color: black;
+  width:100%;
+  height:500px;
+  padding: 46px 5px 0;
+  display: flex;
+  justify-content: space-between;
+  position:absolute;
+}
+.bot{
+  border: 1px rgb(213, 217, 150);
+  width:100%;
+  height:80%;
+}
+
+/* フッター */
+
+.footer {
+  background-color: #999;
+  padding: 10px 0;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* タブレット対応 */
+@media (max-width: 1024px) {
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .page-heading {
+    font-size: 24px;
+  }
+  .card {
+    width: 48%;
+    margin-bottom: 40px;
+  }
+  .prototype_image{
+    width: 60%;
+  }
+}
+
+ /* スマホ表示 */
+@media (max-width: 599px) {
+  .logo {
+    width: 120px;
+  }
+  .page-heading {
+    font-size: 20px;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+  .card__summary {
+    font-size: 14px;
+  }
+  .prototype_image{
+    width: 100%;
+  }
+  .table{
+    width: 100%;
+  }
+}
 

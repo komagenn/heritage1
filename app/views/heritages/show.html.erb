@@ -1,27 +1,60 @@
-
-
 <main class="main">
   <div class="inner">
-    <div class="prototype__wrapper">
-      <p class="prototype__hedding">
+    <div class="heritage__wrapper">
+      <p class="heritage__hedding">
         <%= @heritage.name%>
       </p>
      <%= form_with model: @heritage, local: true do |f| %>
+   <style type="text/css">
+     #heritage {
+     width: 650px;
+     height: 450px;
+     margin: 0 auto;
+     text-align: left;
+     overflow: hidden;
+     position: relative;
+     
+     }
+
+     #heritage img {
+     top: 0;
+     left: 0;
+     position: absolute;
+     }
+   </style>
+
+
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script type="text/javascript">
+   $(function(){
+     var setImg = '#heritage';
+     var fadeSpeed = 1500;
+     var switchDelay = 4500;
+
+     $(setImg).children('img').css({opacity:'0'});
+     $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+     setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+    },switchDelay);
+   });
+   </script>
        <%# <div class="item-img-content">
         <div class=image> %>
-          <div id="photo",class="box"> 
+          <div id="heritage",class="bot"> 
             <% if @heritage.images.attached? %>
              <div class="heritage_images">
                <% @heritage.images.each do |image| %>
-               <div class=top>
-               
+
+              <div class="chat">
+               <div class="tot">
                  <%= image_tag @heritage.images[0] %>
                  <%= image_tag @heritage.images[1] %>
                  <%= image_tag @heritage.images[2] %>
-                 <%= image_tag @heritage.images[3] %>
-                 <%= image_tag @heritage.images[4] %>
-               
+                 <%= image_tag @heritage.images[3] %> 
+                 <%= image_tag @heritage.images[4] %> 
                </div>
+              </div>
                <% end %>
              </div>
             <% end %>
@@ -38,9 +71,9 @@
        </div> %>
       <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
       <% if user_signed_in? && current_user.id == @heritage.user_id %>
-        <div class="prototype__manage">
-          <%= link_to "編集する", edit_heritage_path(@heritage.id), method: :get, class: :heritage__btn %>
-          <%= link_to "削除する", heritage_path(@heritage.id), method: :delete, class: :heritage__btn %>
+        <div class="heritage__manage">
+          <%= link_to "編集する", edit_heritage_path(@heritage.id), method: :get, class: :heritage__left %>
+          <%= link_to "削除する", heritage_path(@heritage.id), method: :delete, class: :heritage__right %>
         </div>
       <% end %>
       <div class="item-explain-box">
@@ -69,10 +102,38 @@
     </table>
      <div class="option">
        <div class="favorite-btn">
-         <%= image_tag "moai.jpeg" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-         <span>お気に入り 0</span>
-       </div>
-     </div>
+        <% if current_user.liked_by?(@heritage.id) %>
+          <td><%= link_to 'お気に入りを外す', destroy_favorite_path(@heritage), method: :DELETE, class: :favorite_btn %></td>
+        <% else %>
+          <td><%= link_to 'お気に入り', create_favorite_path(@heritage), method: :POST, class: :favorite_boton %></td>
+        <% end %>
+      <%# <% if user_signed_in? && Favorite.favorite_method(@heritage, current_user) %>
+        <%# <div class="check_btn__like",--add{data: {heritage_id: @heritage.id}}>
+          <%= link_to "/heritages/#{@heritage.id}/favorites/:id" , method: :DELETE do %>
+            <%# <%= image_tag "moai.jpeg" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+            <%# お気に入り
+            <%= @heritage.favorites.length %> 
+          <%# <% end %> 
+        <%# </div> %>
+      <%# <% elsif user_signed_in? %> 
+        <%# <div class="check_btn__like", {data: {heritage_id: @heritage.id}}>
+          <%= link_to "/heritages/#{@heritage.id}/favorites", method: :POST do %>
+          <%# <%= image_tag "moai.jpeg" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+            <%# お気に入り
+          <%= @heritage.favorites.length %>
+          <%# <% end %> 
+        <%# </div> %> 
+      <%# <% else %> 
+        <%# <div class="check_btn__like">
+          <%= link_to (new_user_session_path) do %>
+          <%# <%= image_tag "moai.jpeg" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+            <%# お気に入り
+          <%= @heritage.favorites.length %>
+          <%# <% end %>
+       <%# <% end %> 
+       <%# </div>
+     </div> %> 
+            
      <% end %>
     </div>
   </div>
