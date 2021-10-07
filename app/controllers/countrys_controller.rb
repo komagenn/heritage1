@@ -15,5 +15,9 @@ class CountrysController < ApplicationController
     params.require(:country).permit(:country_id).merge(user_id: current_user.id, heritage_id: params[:heritage_id])
   end
 
+  def search_country_heritage
+    @q = Heritage.ransack(params[:q])
+  end
+
 end
  
