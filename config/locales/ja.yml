@@ -3,3 +3,10 @@ ja:
     attributes:
       user:
         nick_name: ニックネーム
+      heritage:
+        name       : 世界遺産名
+        register_id: 登録年
+        explain    : 説明
+      country:
+        country    : 国名  
+       

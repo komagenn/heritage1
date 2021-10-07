@@ -1,0 +1,58 @@
+<div class="main">
+  <div class="inner">
+    <div class="user__wrapper">
+      <h2 class="page-heading">
+        <%= "#{@user.nick_name}さん"%><br>
+        <% unless current_user.admin? %> 
+            <% %>
+        <% else %>
+            <%= link_to'投稿する',new_heritage_path,class: 'heritage-btn'%>
+             <div class="page">
+              <h2 class="page-heading">
+               <%= "#{@user.nick_name}さんの投稿"%>
+             </h2>
+             <div class ="country_wrapper">
+              <div class="country">
+        <%# <% @heritage.each do |heritage| %> 
+          <%# <%= link_to image_tag(heritage.images[0], class: :country_img ), heritage_path(heritage.id) %> 
+          <%# <div class="country_body">
+            <div class="country_summary">
+              <%= link_to "世界遺産 #{heritage.name}", heritage_path(heritage.id),class: :country_name %>
+              <%# <%= link_to "#{heritage.register.name}年", heritage_path(heritage.id),class: :country_title %> 
+            <%# </div>  
+          </div> %> 
+        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
+              <%= render partial: 'heritages/heritage',collection: @heritage %>  
+        <%# <% end %>  
+             </div>
+            </div>
+         <% end %> 
+         <div class="mypage_Wrapper">
+    <%# <%= current_user.nick_name %> 
+      お気に入り一覧
+     <div class="favorite_wrapper" >
+       <div class="favorite__box">
+         <%# <% @heritage.each do |heritage| %> 
+           <% if user_signed_in? && Favorite.private_methods(@heritage) %>
+             <%# <div class="favorite__box__product">
+               <div class="favorite__image">
+                 <%= link_to heritage_path(heritage.id) do %>
+                  <%# <%= image_tag heritage.heritage_images[0].image.url %> 
+                 <%# <% end %> 
+                <%= render partial: 'heritages/heritage',collection: @heritage %>  
+                <%# <div class="favorite__name">
+                 <%= @heritage.name %>
+                <%# </div> %> 
+               </div>
+              </div>
+           <% end %>
+         <%# <% end %> 
+       </div>
+      </div>
+    </div>
+       
+      </h2>
+     
+    </div>
+  </div>
+</div>

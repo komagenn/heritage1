@@ -2,10 +2,15 @@ class UsersController < ApplicationController
   def index
     @user = User.all
   end
-  def create
-  end
-
   def show
-    @nick_name = current_user.nick_name
+    @user = User.find(params[:id])
+    # @heritage = Heritage.where(user_id: current_user.id).where.not(image: nil)
+    @heritage = @user.heritages
+  end
+  
+
+  private
+  def user_params
+    params.require(:user).permit(:nick_name, :email, :password, :password_confirmation)
   end
 end

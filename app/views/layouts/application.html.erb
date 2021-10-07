@@ -4,13 +4,13 @@
     <title>Heritage1</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <style type="text/css">
 #photo {
-    width: 500px;
-    height: 300px;
+    width: 650px;
+    height: 450px;
     margin: 0 auto;
     text-align: left;
     overflow: hidden;
@@ -45,8 +45,11 @@ $(function(){
 
   <body>
   <header class='top-page-header'>
-     <h1 class="grid-6"><%= link_to 'WorldHeritage In South America',"/"%></h1>
+   <div class="gird-5">
+     <h1 class="grid-6"><%= link_to image_tag('moai.jpeg', size: '45x45'),"/"%>WorldHeritage <%= link_to image_tag('moai.jpeg', size: '45x45'),"/"%></h1>
+      <p class="grid-7">In South America</p>
       <div class="user_nav">
+      
        <ul class='lists-right'>
          <% if user_signed_in? %>
            <li>
@@ -61,12 +64,25 @@ $(function(){
          <% end %> 
        </ul>
       </div>
-    </header>
+    </div>
+
+  </header>
     <%= yield %>
     <footer>
-      <p>
-        WorldHeritage In South America
-      </p>
+  <%# <div class="main-gradient">
+    
+  </div>  
+  &nbsp;
+</footer>
+
+<div class="dots">
+  <div class="fade-top">
+   <h1>WorldHeritage In South America</h1>
+  </div>
+</div> %>
+
+     
     </footer>
+   </div>
   </body>
 </html>
