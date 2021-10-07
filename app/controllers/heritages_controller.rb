@@ -8,8 +8,7 @@ class HeritagesController < ApplicationController
   end
   def new
      @heritage = Heritage.new
-    # @heritage_country = HeritageCountry.new
-  #   @country_id = params[:country_id]  
+    
   end
   def create
     @heritage = Heritage.create(heritage_params)
@@ -18,18 +17,6 @@ class HeritagesController < ApplicationController
     else
       render :new
     end
-    # #  Country.create(country_params)
-      
- 
-    
-  
-    # if @heritage_country.valid?
-    #   @heritage_country.save
-    #   redirect_to root_path
-    # else
-    #   render :new
-    # end
-    # @heritage = Heritage.new(heritage_params)
    
   end
   def show
@@ -54,21 +41,6 @@ class HeritagesController < ApplicationController
   def destory
   end
 
-  # def argentina
-  #   @heritage = Heritage.find(country_id: params[2])
-  # end
-  # def uruguay
-  #   @heritage = Heritage.where(id: params[:id])
-  #   if @country_id == 3
-  #     @country_id = Country_id.all
-  #   end
-  # end
-  # def ecuador
-  #   @heritage = Heritage.where(id: params[:id])
-  #   if @country_id == 4
-  #     @country_id = Country_id.all
-  #   end
-  # end
 
   def country
     @heritages = @q.result
