@@ -11,7 +11,7 @@ class CountrysController < ApplicationController
 
   private
   def country_params
-    params.require(:country).permit(:country_id).merge(user_id: current_user.id, heritage_id params[:heritage_id])
+params.require(:country).permit(:country_id).merge(user_id: current_user.id, heritage_id: params[:heritage_id])
   end
 
 end
