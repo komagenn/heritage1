@@ -1,6 +1,7 @@
 class CountrysController < ApplicationController
   def index
     @country =Country.find(params[:id])
+  end
   def create
     country = Country.create(country_params)
     redirect_to "/heritages/#{country.heritage.id}"
@@ -11,7 +12,7 @@ class CountrysController < ApplicationController
 
   private
   def country_params
-params.require(:country).permit(:country_id).merge(user_id: current_user.id, heritage_id: params[:heritage_id])
+    params.require(:country).permit(:country_id).merge(user_id: current_user.id, heritage_id: params[:heritage_id])
   end
 
 end
