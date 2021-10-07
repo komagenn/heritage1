@@ -60,4 +60,3 @@
   #     @country_id = Country_id.all
   #   end
   # end              
-end
