@@ -2,12 +2,11 @@ class CountrysController < ApplicationController
   def index
     @country =Country.find(params[:id])
   end
-  def create
-    country = Country.create(country_params)
-    redirect_to "/heritages/#{country.heritage.id}"
-  end
-  def argentina
-    @country =Country.find(id: params[2])
+  # def create
+  #   country = Country.create(country_params)
+  #   redirect_to "/heritages/#{country.heritage.id}"
+  # end
+  def ransackable_attributes
   end
 
   private
