@@ -7,6 +7,7 @@ class CountrysController < ApplicationController
   #   redirect_to "/heritages/#{country.heritage.id}"
   # end
   def ransackable_attributes
+    @ransackable_attributes
   end
 
   private
