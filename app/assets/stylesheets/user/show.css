@@ -34,7 +34,6 @@
 }
 .page{
   background-color: lightcyan;
-  margin-top:20px;
 }
 .page-heading{
   margin-top:10px;
@@ -44,7 +43,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: calc(100vh - 161px);
  
 }
 
