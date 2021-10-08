@@ -1,7 +1,7 @@
 class HeritagesController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
   before_action :set_action, only: [:show, :edit, :destory]
-  # before_action :search_country_heritage, only: [:index, :country, :search]
+  before_action :search_country_heritage, only: [:index, :country, :search]
   def index
     @heritages = Heritage.all
     # @country =Country.find(params[:id])
@@ -42,11 +42,11 @@ class HeritagesController < ApplicationController
   end
 
 
-  # def country
-  #   @heritages = @q.result
-  #   country_id = params[:q][:country_id_eq]
-  #   @country = Country.find_by(id: country_id)
-  # end
+  def country
+    @heritages = @q.result
+    country_id = params[:q][:country_id_eq]
+    @country = Country.find_by(id: country_id)
+  end
   
  private
 
@@ -68,7 +68,7 @@ class HeritagesController < ApplicationController
   def set_action
     @heritage = Heritage.find(params[:id])
   end
-  # def search_country_heritage
-  #   @q = Heritage.ransack(params[:q])
-  # end
+  def search_country_heritage
+    @q = Heritage.ransack(params[:q])
+  end
 end
