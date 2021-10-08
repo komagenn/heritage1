@@ -3,8 +3,11 @@ class NationsController < ApplicationController
     @nation=Nation.find(params[:id])
   end
   def create
-    nation = Country.create(nation_params)
+    nation = Nation.create(nation_params)
     redirect_to "/heritages/#{nation.heritage.id}"
+  end
+  def ransackable_attributes
+    @ransackable_attributes
   end
 
   private
