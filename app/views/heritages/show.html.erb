@@ -102,38 +102,13 @@
     </table>
      <div class="option">
        <div class="favorite-btn">
+     <% unless current_user.id == @heritage.user_id%>
         <% if current_user.liked_by?(@heritage.id) %>
           <td><%= link_to 'お気に入りを外す', destroy_favorite_path(@heritage), method: :DELETE, class: :favorite_btn %></td>
         <% else %>
           <td><%= link_to 'お気に入り', create_favorite_path(@heritage), method: :POST, class: :favorite_boton %></td>
         <% end %>
-      <%# <% if user_signed_in? && Favorite.favorite_method(@heritage, current_user) %>
-        <%# <div class="check_btn__like",--add{data: {heritage_id: @heritage.id}}>
-          <%= link_to "/heritages/#{@heritage.id}/favorites/:id" , method: :DELETE do %>
-            <%# <%= image_tag "moai.jpeg" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-            <%# お気に入り
-            <%= @heritage.favorites.length %> 
-          <%# <% end %> 
-        <%# </div> %>
-      <%# <% elsif user_signed_in? %> 
-        <%# <div class="check_btn__like", {data: {heritage_id: @heritage.id}}>
-          <%= link_to "/heritages/#{@heritage.id}/favorites", method: :POST do %>
-          <%# <%= image_tag "moai.jpeg" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-            <%# お気に入り
-          <%= @heritage.favorites.length %>
-          <%# <% end %> 
-        <%# </div> %> 
-      <%# <% else %> 
-        <%# <div class="check_btn__like">
-          <%= link_to (new_user_session_path) do %>
-          <%# <%= image_tag "moai.jpeg" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-            <%# お気に入り
-          <%= @heritage.favorites.length %>
-          <%# <% end %>
-       <%# <% end %> 
-       <%# </div>
-     </div> %> 
-            
+       <% end %>
      <% end %>
     </div>
   </div>

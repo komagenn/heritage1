@@ -1,7 +1,7 @@
 class HeritagesController < ApplicationController
   before_action :search_nation_heritage, only: [:index, :nation, :search]
   before_action :move_to_index, except: [:index, :show]
-  before_action :set_action, only: [:show, :edit, :destory]
+  before_action :set_action, only: [:show, :edit, :destroy]
  
   def index
     @heritages = Heritage.all
@@ -39,7 +39,9 @@ class HeritagesController < ApplicationController
    end
  
  end
-  def destory
+  def destroy
+    @heritage.destroy
+      redirect_to root_path
   end
 
 
