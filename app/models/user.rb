@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          
   has_many :heritages
-  has_many :country
+  has_many :nation
   has_many :favorites
   has_many :heritages, through: :favorites
 

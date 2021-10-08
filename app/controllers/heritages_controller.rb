@@ -1,11 +1,11 @@
 class HeritagesController < ApplicationController
-  before_action :search_country_heritage, only: [:index, :country, :search]
+  before_action :search_nation_heritage, only: [:index, :nation, :search]
   before_action :move_to_index, except: [:index, :show]
   before_action :set_action, only: [:show, :edit, :destory]
  
   def index
     @heritages = Heritage.all
-    # @country =Country.find(params[:id])
+    # @nation =Country.find(params[:id])
   end
   def new
      @heritage = Heritage.new
@@ -21,9 +21,9 @@ class HeritagesController < ApplicationController
    
   end
   def show
-    @country = Country.new
+    @nation = Nation.new
     @heritage = Heritage.find(params[:id])
-    # @country = @heritage.country.includes(:user)
+    # @nation = @heritage.nation.includes(:user)
   end
   def edit
     unless @heritage.user_id == current_user.id
@@ -43,14 +43,14 @@ class HeritagesController < ApplicationController
   end
 
 
-  def country
+  def nation
     @heritages = @q.result
-    country_id = params[:q][:country_id_eq]
-    @country = Country.find_by(id: country_id)
+    nation_id = params[:q][:nation_id_eq]
+    @nation = Nation.find_by(id: nation_id)
   end
   
  private
-  def search_country_heritage
+  def search_nation_heritage
     @q = Heritage.ransack(params[:q])
   end
   def move_to_index
@@ -59,10 +59,10 @@ class HeritagesController < ApplicationController
     end
   end
   def heritage_params
-    params.require(:heritage).permit(:name, :register_id, :country_id, :explain, images:[]).merge(user_id: current_user.id)
+    params.require(:heritage).permit(:name, :register_id, :nation_id, :explain, images:[]).merge(user_id: current_user.id)
   end
-  # def country_params
-  #   params.permit(:country_id).merge(heritage_id: @heritage.id)
+  # def nation_params
+  #   params.permit(:nation_id).merge(heritage_id: @heritage.id)
   # end
 
   # def image

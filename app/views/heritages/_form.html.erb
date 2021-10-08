@@ -1,6 +1,6 @@
-  <%= form_with model:@heritage, local: true do |f| %>  %>
+  <%= form_with model:@heritage, local: true do |f| %>  
 
- <%# <%= form_with model: @heritage_country, url: heritages_path, local: true do |f| %>  %>
+ <%# <%= form_with model: @heritage_nation, url: heritages_path, local: true do |f| %> 
 
 
     <%= render 'heritages/shared/error_messages', model: f.object %> 
@@ -12,7 +12,7 @@
         世界遺産名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :name, class:"heritages-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      <%= f.text_area :name, class:"heritages-text", id:"item-name", placeholder:"世界遺産名（必須 40文字まで)", maxlength:"40" %>
       <div class="weight-bold-text">
        写真
        <span class="indispensable">必須</span>
@@ -34,7 +34,7 @@
           国
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:country_id, Country.all, :id, :name, {}, {class:"select-box", id:"country"}) %>
+        <%= f.collection_select(:nation_id, Nation.all, :id, :name, {}, {class:"select-box", id:"nation"}) %>
         <div class="weight-bold-text">
           説明
           <span class="indispensable">必須</span>

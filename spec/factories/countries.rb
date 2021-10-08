@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :country do
+  factory :nation do
     
   end
 end

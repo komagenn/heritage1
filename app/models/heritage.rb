@@ -2,7 +2,7 @@ class Heritage < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :register
   belongs_to :user
-  belongs_to :country
+  belongs_to :nation
   has_many   :favorites
   has_many_attached :images
   

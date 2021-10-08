@@ -1,4 +1,4 @@
-class Country < ActiveHash::Base
+class Nation < ActiveHash::Base
   self.data = [
              { id: 1, name: 'アルゼンチン共和国' },
              { id: 2, name: 'ウルグアイ東方共和国' },

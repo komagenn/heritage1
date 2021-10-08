@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   root to: 'heritages#index'
-  get '/heritages/country', to: "heritages#country"
+  get '/heritages/nation', to: "heritages#nation"
   resources :heritages do
-    resources :countrys
+    resources :nations
     
   end
   post 'favorite/:id' => 'favorites#create', as: 'create_favorite'
