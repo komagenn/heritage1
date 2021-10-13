@@ -6,11 +6,12 @@ class HeritagesController < ApplicationController
   before_action :no_edit, only: [:edit, :update, :destroy]
   def index
     @heritages = Heritage.all
-    # @nation =Country.find(params[:id])
   end
   def new
      @heritage = Heritage.new
-    
+    unless @heritage.user_id == current_user.id
+      redirect_to root_path
+    end 
   end
   def create
     @heritage = Heritage.create(heritage_params)
@@ -23,30 +24,23 @@ class HeritagesController < ApplicationController
   end
   def show
     @nation = Nation.new
-    @heritage = Heritage.find(params[:id])
-    # @nation = @heritage.nation.includes(:user)
   end
   def edit
-
     unless @heritage.user_id == current_user.id
       redirect_to action: :show
      end
   end
   def update
-    @heritage = Heritage.find(params[:id])
    if @heritage.update(heritage_params)
      redirect_to heritage_path(@heritage)
    else
      render :edit
    end
- 
  end
   def destroy
     @heritage.destroy
       redirect_to root_path
   end
-
-
   def nation
     @heritages = @q.result
     nation_id = params[:q][:nation_id_eq]
@@ -65,13 +59,6 @@ class HeritagesController < ApplicationController
   def heritage_params
     params.require(:heritage).permit(:name, :register_id, :nation_id, :explain, images:[]).merge(user_id: current_user.id)
   end
-  # def nation_params
-  #   params.permit(:nation_id).merge(heritage_id: @heritage.id)
-  # end
-
-  # def image
-  #   @heritages = Heritage.where(user_id: current_user.id).where.not(heritage_id: nil)
-  # end
   def set_action
     @heritage = Heritage.find(params[:id])
   end

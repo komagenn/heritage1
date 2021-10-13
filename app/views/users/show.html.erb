@@ -4,7 +4,7 @@
       <h2 class="page-heading">
         <%= "#{@user.nick_name}さん"%><br>
         <% unless current_user.admin? %> 
-            <% %>
+            
         <% else %>
             <%= link_to'投稿する',new_heritage_path,class: 'heritage-btn'%>
              <div class="page">
