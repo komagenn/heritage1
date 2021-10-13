@@ -4,13 +4,13 @@
     <title>Heritage1</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <style type="text/css">
 #photo {
-    width: 500px;
-    height: 300px;
+    width: 1000px;
+    height: 550px;
     margin: 0 auto;
     text-align: left;
     overflow: hidden;
@@ -41,14 +41,34 @@ $(function(){
 });
 </script>
 
-  </head>
+ <style type="text/css">
+     #heritage {
+     width: 700px;
+     height: 500px;
+     margin: 0 auto;
+     text-align: left;
+     overflow: hidden;
+     position: relative;
+     }
 
+     #heritage img {
+     top: 0;
+     left: 0;
+     position: absolute;
+     }
+</style>
+  </head>
   <body>
   <header class='top-page-header'>
    <div class="gird-5">
+<<<<<<< HEAD
      <h1 class="grid-6"><%= link_to image_tag('moai.jpeg', size: '45x45'),"/"%>WorldHeritage <%= link_to image_tag('moai.jpeg', size: '45x45'),"/"%></h1>
+=======
+     <h1 class="grid-6"><%= link_to image_tag('moai.jpg', size: '45x45'),"/"%>WorldHeritage <%= link_to image_tag('moai.jpeg', size: '45x45'),"/"%></h1>
+>>>>>>> master
       <p class="grid-7">In South America</p>
       <div class="user_nav">
+      
        <ul class='lists-right'>
          <% if user_signed_in? %>
            <li>
@@ -68,9 +88,9 @@ $(function(){
   </header>
     <%= yield %>
     <footer>
-      <p>
-        WorldHeritage In South America
-      </p>
+
+     
     </footer>
+   </div>
   </body>
 </html>

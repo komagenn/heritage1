@@ -1,0 +1,48 @@
+  <%= form_with model:@heritage, local: true do |f| %>  
+
+
+    <%= render 'heritages/shared/error_messages', model: f.object %> 
+
+       
+   
+    <div class="new-heritages">
+      <div class="weight-bold-text">
+        世界遺産名
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :name, class:"heritages-text", id:"item-name", placeholder:"世界遺産名（必須 40文字まで)", maxlength:"40" %>
+      <div class="weight-bold-text">
+       写真
+       <span class="indispensable">必須</span>
+      </div>
+      <div class=image>
+        <%= f.file_field :images, name: 'heritage[images][]', id: 'heritage_image', class:"heritage-image"%>  
+        <div id="image-list"></div>
+       <div class="heritages"></div>  
+      </div>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          登録年
+          <span class="indispensable">必須</span>
+         </div>
+          <%= f.collection_select(:register_id, Register.all, :id, :name, {}, {class:"select-box", id:"register"}) %>
+        </div>
+      <div class="form">
+        <div class="weight-bold-text">
+          国
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:nation_id, Nation.all, :id, :name, {}, {class:"select-box", id:"nation"}) %>
+        <div class="weight-bold-text">
+          説明
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :explain, class:"heritages-explain", id:"explain", placeholder:"説明（1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+        
+    </div>
+    <div class="heritage-contents">
+      <%= f.submit "投稿する" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+ <% end %> 

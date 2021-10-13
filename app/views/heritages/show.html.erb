@@ -1,0 +1,66 @@
+<main class="main">
+  <div class="inner">
+    <div class="heritage__wrapper">
+      <p class="heritage__hedding">
+        <%= @heritage.name%>
+      </p>
+     <%= form_with model: @heritage, local: true do |f| %>
+          <div id="heritage",class="bot"> 
+            <% if @heritage.images.attached? %>
+             <div class="heritage_images">
+               <% @heritage.images.each do |image| %>
+
+               <div id="photo",class="bot">
+                 <%= image_tag @heritage.images[0],class:"box1"%>
+                 <%= image_tag @heritage.images[1],class:"box1"%>
+                 <%= image_tag @heritage.images[2],class:"box1"%>
+                 <%= image_tag @heritage.images[3],class:"box1"%> 
+                 <%= image_tag @heritage.images[4],class:"box1"%> 
+               </div>
+               <% end %>
+             </div>
+            <% end %>
+          </div>      
+           </div>  
+         <div id="image-list"></div>
+       
+      <% if user_signed_in? && current_user.id == @heritage.user_id %>
+        <div class="heritage__manage">
+          <%= link_to "編集する", edit_heritage_path(@heritage.id), method: :get, class: :heritage__left %>
+          <%= link_to "削除する", heritage_path(@heritage.id), method: :delete, class: :heritage__right %>
+        </div>
+      <% end %>
+    <table class="detail-table">
+      <tbody>
+        <tr>
+          <th class="detail-item">世界遺産名</th>
+          <td class="detail-value"><%= (@heritage.name) %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">登録年</th>
+          <td class="detail-value"><%= (@heritage.register.name) %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">国</th>
+          <td class="detail-value"><%= (@heritage.nation.name) %></td>
+        </tr>
+        <tr>
+          <th class="detail-item">説明</th>
+          <td class="detail-value"><%= (@heritage.explain) %></td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+     <div class="option">
+       <div class="favorite-btn">
+     <% unless current_user.id == @heritage.user_id%>
+        <% if current_user.liked_by?(@heritage.id) %>
+          <td><%= link_to 'お気に入りを外す', destroy_favorite_path(@heritage), method: :DELETE, class: :favorite_btn %></td>
+        <% else %>
+          <td><%= link_to 'お気に入り', create_favorite_path(@heritage), method: :POST, class: :favorite_boton %></td>
+        <% end %>
+       <% end %>
+     <% end %>
+    </div>
+  </div>
+</main>
