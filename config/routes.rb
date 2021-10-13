@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   root to: 'heritages#index'
   devise_for :users
   get '/heritages/nation', to: "heritages#nation"
+  post 'favorite/:id' => 'favorites#create', as: 'create_favorite'
+  delete 'favorite/:id' => 'favorites#destroy', as: 'destroy_favorite'  
   resources :heritages do
     resources :nations
   end
-  post 'favorite/:id' => 'favorites#create', as: 'create_favorite'
-  delete 'favorite/:id' => 'favorites#destroy', as: 'destroy_favorite'  
   resources :users
 end
 

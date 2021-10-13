@@ -73,6 +73,17 @@
  .sign:hover{
   color:darkorange;
 }
+ .gestsign{
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  border-radius: 100vh;
+  padding:4px;
+ }
+ 
+ .gestsign:hover{
+  color:darkorange;
+}
 .sign-right{
   margin-left:10px;
   text-decoration: none;

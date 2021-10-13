@@ -14,4 +14,5 @@ class User < ApplicationRecord
   def liked_by?(heritage_id)
     favorites.where(heritage_id: heritage_id).exists?
   end
+  
 end

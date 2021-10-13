@@ -46,7 +46,6 @@ class HeritagesController < ApplicationController
     nation_id = params[:q][:nation_id_eq]
     @nation = Nation.find_by(id: nation_id)
   end
-  
  private
   def search_nation_heritage
     @q = Heritage.ransack(params[:q])

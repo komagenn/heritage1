@@ -8,6 +8,7 @@ class UsersController < ApplicationController
     @users = @user.heritages
   end
   
+  
 
   private
   def user_params
