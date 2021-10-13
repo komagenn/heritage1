@@ -6,7 +6,6 @@
   min-height: calc(100vh - 161px);
   text-align: center;
   width:100%;
-  
 }
 .user__card {
   display: flex;
@@ -56,8 +55,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left:180px;
- 
+  margin-left:180px; 
 }
 
 .country{
@@ -171,9 +169,6 @@
   width: 100%;
   background-color: lightcyan;
 }
-.card{
-
-}
 .card_country{
   position: relative;
   background: #fff0cd;
@@ -182,7 +177,6 @@
   padding: 0.5em 0.5em;
   color: #454545;
   list-style: none;
-}
 }
 .card_country:after{
   position: absolute;
