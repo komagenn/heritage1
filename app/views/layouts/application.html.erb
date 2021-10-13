@@ -9,8 +9,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <style type="text/css">
 #photo {
-    width: 650px;
-    height: 450px;
+    width: 1000px;
+    height: 550px;
     margin: 0 auto;
     text-align: left;
     overflow: hidden;
@@ -40,6 +40,41 @@ $(function(){
     },switchDelay);
 });
 </script>
+
+ <style type="text/css">
+     #heritage {
+     width: 700px;
+     height: 500px;
+     margin: 0 auto;
+     text-align: left;
+     overflow: hidden;
+     position: relative;
+     
+     }
+
+     #heritage img {
+     top: 0;
+     left: 0;
+     position: absolute;
+     }
+</style>
+
+
+<%# <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+   $(function(){
+     var setImg = '#heritage';
+     var fadeSpeed = 1500;
+     var switchDelay = 4500;
+
+     $(setImg).children('img').css({opacity:'0'});
+     $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+     setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+    },switchDelay);
+   });
+</script> %>
 
   </head>
 

@@ -12,30 +12,38 @@
                <%= "#{@user.nick_name}さんの投稿"%>
              </h2>
              <div class ="country_wrapper">
-              <div class="country">
-              <% @heritages.each do |heritage| %>
-              <li class="toko" >
-                <%= link_to "#{heritage.name}", "http://localhost:3000/heritages/nation?q%5Bnation_id_eq%5D=#{heritage.nation.id}&commit=%E6%A4%9C%E7%B4%A2" %>
+              <div class="country_nation">
+             <ul>
+             <% @heritages.each do |heritage| %>
+              <li class="anather-country">
+                <%= link_to "#{heritage.name}", "http://localhost:3000/heritages/nation?q%5Bnation_id_eq%5D=#{heritage.nation.id}&commit=%E6%A4%9C%E7%B4%A2",class: :country__title %>
+                 <%= link_to "#{heritage.register.name}年", heritage_path(heritage.id),class: :country__title %>  
                  <%# <%= render partial: 'heritages/heritage',collection: @heritage %>
                  <%= link_to image_tag(heritage.images[0], class: :country_img ), heritage_path(heritage.id) %>
                 <div class="country_index">
-                <p class="country_summary">
-           
-                 <%= link_to "#{heritage.register.name}年", heritage_path(heritage.id),class: :country__title %>  
+                 <p class="country_summary">
                </div>
-              </li>
-          <% end %>
+               </li>
+              <% end %>
+              </ul>
              </div>
             </div>
         <% end %> 
   
-       <div class="mypage_Wrapper">
-         お気に入り一覧
-        <div class="favorite_wrapper" >
+       <div class="mypage_wrapper">
+         <h2>お気に入り一覧</h2>
+        <div class="favorite_wrapper">
          <div class="favorite__box">
-           <% if user_signed_in? && Favorite.private_methods(@heritage) %>
-             <%= render partial: 'heritages/heritage',collection: @users %>  
-           <% end %>
+          <%# <ul>
+            <li class="favorite-country"> %>
+           
+             <% if user_signed_in? && Favorite.private_methods(@heritage) %>
+             
+               <%= render partial: 'heritages/heritage',collection: @users %>  
+             <% end %>
+           
+            <%# </li>
+          </ul> %>
          </div> 
        </div>
       </div>

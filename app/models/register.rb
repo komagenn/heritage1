@@ -35,7 +35,8 @@ class Register < ActiveHash::Base
     { id: 33, name: '2016' },
     { id: 34, name: '2017' },
     { id: 35, name: '2018' },
-    { id: 36, name: '2019' }
+    { id: 36, name: '2019' },
+    { id: 37, name: '2021' }
   ]
 
     include ActiveHash::Associations

@@ -2,7 +2,7 @@ class HeritagesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :edit, :show, :update,:create, :destroy]
   before_action :search_nation_heritage, only: [:index, :nation, :search]
   before_action :move_to_index, except: [:index, :show]
-  before_action :set_action, only: [:show, :edit, :destroy]
+  before_action :set_action, only: [:show, :edit,:update, :destroy]
   before_action :no_edit, only: [:edit, :update, :destroy]
   def index
     @heritages = Heritage.all
@@ -27,6 +27,7 @@ class HeritagesController < ApplicationController
     # @nation = @heritage.nation.includes(:user)
   end
   def edit
+
     unless @heritage.user_id == current_user.id
       redirect_to action: :show
      end
@@ -75,7 +76,7 @@ class HeritagesController < ApplicationController
     @heritage = Heritage.find(params[:id])
   end
   def no_edit
-    if @heritage.user_id != current_user.id
+    unless @heritage.user_id == current_user.id
       redirect_to root_path
     end
   end

@@ -5,6 +5,7 @@
 .user__wrapper{
   min-height: calc(100vh - 161px);
   text-align: center;
+  width:100%;
   
 }
 .user__card {
@@ -32,8 +33,13 @@
   border-bottom: 7px solid #987c1e;
   border-left: 4px solid #ffed8b;
 }
-.page{
-  background-color: lightcyan;
+.country-index{
+  height:100%;
+  width:100%;
+  text-align: center;
+}
+.country-css{
+  font-size:32px;
 }
 .page-heading{
   margin-top:10px;
@@ -45,33 +51,78 @@
   align-items: center;
  
 }
+.country__wrapper{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:180px;
+ 
+}
 
 .country{
-  width: calc((100% - 50px) / 3);
   margin-top: 20px;
   margin-bottom: 40px;
-  
-  
+  margin-left:20px;
+  display: flex;
+  width: 80%;
+  background-color: lightcyan;
+}
+.country_nation{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left:20px;
+  display: flex;
+  width: 100%;
+  background-color: lightcyan;
+}
+.anather-country{
+  width:100%;
+  margin:20px;
+  padding:20px;
+  float: left;
+  width: calc(45%);
+  position: relative;
+  background: #fff0cd;
+  box-shadow: 0px 0px 0px 5px #fff0cd;
+  border: dashed 2px white;
+  padding: 0.5em 0.5em;
+  color: #454545;
+}
+.anather-country:after{
+  position: absolute;
+  content: '';
+  right: -7px;
+  top: -7px;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: #ffdb88 #fff #ffdb88;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 .country_img {
+  width:350px;
   height:250px;
-  weight:250px;
   margin-bottom: 10px;
+  
 }
 .country_name {
   display: block;
   font-size: 20px;
-  margin-left:50px;
-  
   text-decoration: none;
   color:black;
   
 }
-.country_title{
+.country__title{
   text-decoration: none;
   color:black;
   margin-top:4px;
-  margin-left:140px;
+  margin-left:50px;
+  padding-bottom:20px;
+}
+.card_body{
+  height:100%;
+  width:100%;
+  text-align: center;
 }
 .country_summary {
   display: flex;
@@ -81,3 +132,62 @@
 .toko{
   list-style: none;
 }
+.mypage_wrapper{
+  width:100%;
+}
+.mypage_wrapper h2{
+  font-size:32px;
+}
+.favorite_wrapper{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.favorite__box{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left:20px;
+  width: 100%;
+  background-color: lightcyan;
+}
+.favorite-country{
+  width:100%;
+  padding:20px;
+  float: left;
+}
+.card_wrapper{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:20px;
+}
+.card_nation{
+  margin-bottom: 40px;
+  margin-left:20px;
+  display: flex;
+  width: 100%;
+  background-color: lightcyan;
+}
+.card{
+
+}
+.card_country{
+  position: relative;
+  background: #fff0cd;
+  box-shadow: 0px 0px 0px 5px #fff0cd;
+  border: dashed 2px white;
+  padding: 0.5em 0.5em;
+  color: #454545;
+}
+.card_country:after{
+  position: absolute;
+  content: '';
+  right: -7px;
+  top: -7px;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: #ffdb88 #fff #ffdb88;
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+} 

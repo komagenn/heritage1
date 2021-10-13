@@ -9,8 +9,8 @@ class Heritage < ApplicationRecord
   with_options presence: true do
     validates :name
     validates :explain
+    validates :images
    end
                                
   validates :register_id, numericality: { other_than: 1 , message: "を選択してください"} 
- 
 end

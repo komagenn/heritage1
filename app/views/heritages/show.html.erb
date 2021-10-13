@@ -5,40 +5,7 @@
         <%= @heritage.name%>
       </p>
      <%= form_with model: @heritage, local: true do |f| %>
-   <style type="text/css">
-     #heritage {
-     width: 650px;
-     height: 450px;
-     margin: 0 auto;
-     text-align: left;
-     overflow: hidden;
-     position: relative;
-     
-     }
-
-     #heritage img {
-     top: 0;
-     left: 0;
-     position: absolute;
-     }
-   </style>
-
-
-   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-   <script type="text/javascript">
-   $(function(){
-     var setImg = '#heritage';
-     var fadeSpeed = 1500;
-     var switchDelay = 4500;
-
-     $(setImg).children('img').css({opacity:'0'});
-     $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
-
-     setInterval(function(){
-        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
-    },switchDelay);
-   });
-   </script>
+ 
        <%# <div class="item-img-content">
         <div class=image> %>
           <div id="heritage",class="bot"> 
@@ -46,15 +13,13 @@
              <div class="heritage_images">
                <% @heritage.images.each do |image| %>
 
-              <div class="chat">
-               <div class="tot">
-                 <%= image_tag @heritage.images[0] %>
-                 <%= image_tag @heritage.images[1] %>
-                 <%= image_tag @heritage.images[2] %>
-                 <%= image_tag @heritage.images[3] %> 
-                 <%= image_tag @heritage.images[4] %> 
+               <div id="photo",class="bot">
+                 <%= image_tag @heritage.images[0],class:"box1"%>
+                 <%= image_tag @heritage.images[1],class:"box1"%>
+                 <%= image_tag @heritage.images[2],class:"box1"%>
+                 <%= image_tag @heritage.images[3],class:"box1"%> 
+                 <%= image_tag @heritage.images[4],class:"box1"%> 
                </div>
-              </div>
                <% end %>
              </div>
             <% end %>
@@ -76,9 +41,9 @@
           <%= link_to "削除する", heritage_path(@heritage.id), method: :delete, class: :heritage__right %>
         </div>
       <% end %>
-      <div class="item-explain-box">
+      <%# <div class="item-explain-box">
         <span><%= @heritage.name %></span>
-      </div>
+      <%# </div> %> 
     <table class="detail-table">
       <tbody>
         <tr>

@@ -7,6 +7,7 @@ ja:
         name       : 世界遺産名
         register_id: 登録年
         explain    : 説明
+        images     : 画像
       nation:
         nation    : 国名  
        
