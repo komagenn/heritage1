@@ -62,7 +62,7 @@
   resize: none;
 }
 .indispensable{
-  color:black;
+  color:white;
 }
 
 .info-text {
@@ -130,8 +130,8 @@
 
 .register-red-btn {
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
+  background: #7380a8;
+  border: 1px solid #94a3c1;
   color: #fff;
   margin-top:40px;
   line-height: 48px;

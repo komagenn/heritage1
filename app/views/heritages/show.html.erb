@@ -5,9 +5,6 @@
         <%= @heritage.name%>
       </p>
      <%= form_with model: @heritage, local: true do |f| %>
- 
-       <%# <div class="item-img-content">
-        <div class=image> %>
           <div id="heritage",class="bot"> 
             <% if @heritage.images.attached? %>
              <div class="heritage_images">
@@ -24,26 +21,15 @@
              </div>
             <% end %>
           </div>      
-           <%# <%= link_to image_tag @heritage.images[0] %>
-           <%# <%= image_tag (@heritage.]), class:"box" %> 
-           <%# <%= link_to image_tag @heritage.images[1] %> 
-           <%# <%= link_to image_tag @heritage.images[2] %>
-           <%# <%= link_to image_tag @heritage.images[3] %>
-           <%# <%= link_to image_tag @heritage.images[4] %>  
            </div>  
          <div id="image-list"></div>
-        <%# </div>
-       </div> %>
-      <%# プロトタイプの投稿者とログインしているユーザーが同じであれば以下を表示する %>
+       
       <% if user_signed_in? && current_user.id == @heritage.user_id %>
         <div class="heritage__manage">
           <%= link_to "編集する", edit_heritage_path(@heritage.id), method: :get, class: :heritage__left %>
           <%= link_to "削除する", heritage_path(@heritage.id), method: :delete, class: :heritage__right %>
         </div>
       <% end %>
-      <%# <div class="item-explain-box">
-        <span><%= @heritage.name %></span>
-      <%# </div> %> 
     <table class="detail-table">
       <tbody>
         <tr>

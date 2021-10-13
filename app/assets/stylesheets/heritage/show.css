@@ -49,7 +49,7 @@
 
 .item-red-btn {
   text-align: center;
-  background-color: #ea352d;
+  background: #7380a8;
   font-size: 24px;
   font-weight: bold;
   color: #FFF;
@@ -107,8 +107,8 @@
   border-radius: 40px;
   width: 15vw;
   min-width: 200px;
-  color: rgb(249, 75, 0);
-  border: 2px solid #ffb340;
+  background: #7380a8;
+  border: 1px solid #94a3c1;
   display: flex;
   justify-content: center;
   align-items: center;

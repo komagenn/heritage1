@@ -7,11 +7,10 @@
      <ul>
       <% @heritages.each do |heritage| %>
         <li class="anather-country">
-           <%# <div class=left></div>
-           <div class=right></div> %>
+           
           <%= link_to "#{heritage.name}", "http://localhost:3000/heritages/nation?q%5Bnation_id_eq%5D=#{heritage.nation.id}&commit=%E6%A4%9C%E7%B4%A2" ,class: :country__title%><br> 
            <%= link_to "#{heritage.register.name}年", heritage_path(heritage.id),class: :country__title %> 
-           <%# <%= render partial: 'heritages/heritage',collection: @heritage %> 
+         
            <%= link_to image_tag(heritage.images[0], class: :country_img ), heritage_path(heritage.id) %>
           <div class="country_index">
             <p class="country_summary">
