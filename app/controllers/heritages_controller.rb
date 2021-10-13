@@ -9,9 +9,7 @@ class HeritagesController < ApplicationController
   end
   def new
      @heritage = Heritage.new
-    unless @heritage.user_id == current_user.id
-      redirect_to root_path
-    end 
+    
   end
   def create
     @heritage = Heritage.create(heritage_params)
