@@ -88,6 +88,7 @@
   border: dashed 2px white;
   padding: 0.5em 0.5em;
   color: #454545;
+  list-style: none;
 }
 .anather-country:after{
   position: absolute;
@@ -98,9 +99,6 @@
   border-style: solid;
   border-color: #ffdb88 #fff #ffdb88;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
-}
-.anather-country li{
-  list-style: none;
 }
 .country_img {
   width:350px;
@@ -183,6 +181,8 @@
   border: dashed 2px white;
   padding: 0.5em 0.5em;
   color: #454545;
+  list-style: none;
+}
 }
 .card_country:after{
   position: absolute;
@@ -194,6 +194,3 @@
   border-color: #ffdb88 #fff #ffdb88;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 } 
-.card_country{
-  list-style: none;
-}
