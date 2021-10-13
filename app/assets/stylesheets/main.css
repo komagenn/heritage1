@@ -1,16 +1,10 @@
-.wrapper {
-  display: flex;
-  height: 850px;
-  position: relative;
-  width:100%;
-}
 .seach{
   margin:10px 20px 30px 30px;
 
 }
 .sbtn{
   width:70px;/*検索ボタンの横幅*/ 
-  margin-top:15px;
+  margin-top:150px;
   height:50px;/*検索ボタンの縦幅*/ 
   position:absolute;/*検索ボタンの絶対位置*/  
   left:270px;/*検索ボタンの位置調整*/  
