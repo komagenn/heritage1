@@ -5,6 +5,9 @@
   南米の世界遺産を一覧できるアプリケーションです。
 ・URL
 ・テスト用アカウント
+ Basic認証
+ ユーザー名：admin
+ パスワード：2233
  管理者：
    メールアドレス：tt@test   パスワード：tamago55
  ユーザー：
@@ -52,7 +55,8 @@ https://gyazo.com/3a3cd634d5f204b9c5745c8a344724fe
 https://gyazo.com/224633918573ab871114899e9473dc3b
 検索機能
 https://gyazo.com/49fecf1e3680f22ff64c9f72a08ff702
-
+Basic認証
+https://gyazo.com/abee190f401fc69649dd76cc8b9e7baf
 
 ・データベースの設計
 [![Image from Gyazo](https://i.gyazo.com/38689c026fdad3150e91e0354ac5470e.png)](https://gyazo.com/38689c026fdad3150e91e0354ac5470e)
