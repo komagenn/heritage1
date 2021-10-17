@@ -1,12 +1,12 @@
 # アプリケーション説明(h1)
- ！[モアイ](https://github.com/komagenn/heritage1/blob/master/image.100.jpeg)
-・アプリケーション名
-  heritage1
-・アプリケーション概要
-  南米の世界遺産を一覧できるアプリケーションです。
-・URL
-  https://heritage1.herokuapp.com/
-・テスト用アカウント
+ ！[モアイ](https://github.com/komagenn/heritage1/blob/master/image.100.jpeg)<br>
+・アプリケーション名<br>
+  heritage1<br>
+・アプリケーション概要<br>
+  南米の世界遺産を一覧できるアプリケーションです。<br>
+・URL<br>
+  https://heritage1.herokuapp.com/<br>
+・テスト用アカウント<br>
   Basic認証
   ユーザー名：admin
   パスワード：2233
