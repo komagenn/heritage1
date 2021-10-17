@@ -1,10 +1,10 @@
 # アプリケーション説明(h1)
- [モアイ](./images/image.104.jpeg)
+ [モアイ](./images/image.100.jpeg)
 ・アプリケーション名
   heritage1
 ・アプリケーション概要
   南米の世界遺産を一覧できるアプリケーションです。
-・URL(h2)
+・URL
   https://heritage1.herokuapp.com/
 ・テスト用アカウント
   Basic認証
@@ -34,7 +34,7 @@
   管理者機能
   画面遷移機能
   検索機能
-・実装した機能についての画像やGIFおよびその説明(h2)
+・実装した機能についての画像やGIFおよびその説明
 ユーザー管理機能
 https://gyazo.com/ddf71cf9e1293463c7be3b15d6d44860
 投稿機能
