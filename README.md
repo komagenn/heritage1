@@ -1,5 +1,5 @@
 # アプリケーション説明(h1)
- ！[](./images/image.100.jpeg)<br>
+
 ・アプリケーション名<br>
   heritage1<br>
 ・アプリケーション概要<br>
