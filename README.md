@@ -1,7 +1,6 @@
 
 # アプリケーション説明(h1)
-![./images/image.100.jpeg]![image 100](https://user-images.githubusercontent.com/89065599/137609262-a9165e59-d38b-4b2d-ab5f-cff03f647434.jpeg)
-
+![image 100](https://user-images.githubusercontent.com/89065599/137609262-a9165e59-d38b-4b2d-ab5f-cff03f647434.jpeg)
 ・アプリケーション名<br>
   heritage1<br>
 ・アプリケーション概要<br>
