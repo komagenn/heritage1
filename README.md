@@ -1,5 +1,5 @@
 # アプリケーション説明(h1)
- ！[サンプル画像](https://github.com/komagenn/heritage1/blob/master/image.100.jpeg)<br>
+ ！[](./images/image.100.jpeg)<br>
 ・アプリケーション名<br>
   heritage1<br>
 ・アプリケーション概要<br>
