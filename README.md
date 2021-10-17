@@ -1,5 +1,4 @@
-# アプリケーション説明(h1)
- ！[モアイ](https://github.com/komagenn/heritage1/blob/master/image.100.jpeg)<br>
+# アプリケーション説明(h1)<br>
 ・アプリケーション名<br>
   heritage1<br>
 ・アプリケーション概要<br>
