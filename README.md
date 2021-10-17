@@ -1,5 +1,5 @@
 # アプリケーション説明(h1)
- [モアイ](./images/image.104.jpeg)
+ [モアイ](./images/image.100.jpeg)
 ・アプリケーション名
   heritage1
 ・アプリケーション概要
