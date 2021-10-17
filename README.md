@@ -1,67 +1,68 @@
 # アプリケーション説明(h1)
-・アプリケーション名
-  heritage1
-・アプリケーション概要
-  南米の世界遺産を一覧できるアプリケーションです。
-・URL
-  https://heritage1.herokuapp.com/
-・テスト用アカウント
-  Basic認証
-  ユーザー名：admin
-  パスワード：2233
-  管理者：
-   メールアドレス：tt@test   パスワード：tamago55
-  ユーザー：
-   メールアドレス：test@test パスワード :tamago55
-・利用方法
-  南米の世界遺産について画像と共に一覧したい時に国ごとで閲覧が可能です。
-・目指した課題解決
-  世界遺産は現在1150個以上あります。
-  しかし、知っている数は100個もいかないと思います。
-  そのため、知らない世界遺産についても国を選ぶだけで知ることができます。
-  また南米の世界遺産に関しては、写真付きで説明も載っているサイトというのは、私が探した中ではありませんでした。
-  そこで、南米の世界遺産について一覧を作ることで、より気軽に世界遺産について知ることができるきっかけが作れると考えました。
-・洗い出した要件
-  ユーザー管理機能
-  投稿機能
-  一覧機能
-  詳細機能
-  編集・更新機能
-  削除機能
-  マイページ機能
-  お気に入り機能
-  管理者機能
-  画面遷移機能
-  検索機能
-・実装した機能についての画像やGIFおよびその説明
-ユーザー管理機能
-https://gyazo.com/ddf71cf9e1293463c7be3b15d6d44860
-投稿機能
-https://gyazo.com/74dc3c5221f5725e110b845b16e10f04
-一覧機能
-https://gyazo.com/30afd2e64c1113a573251a0fd85f3e5d
-詳細機能
-https://gyazo.com/b461e0644943dc6b767a3e4ff7734edb
-編集・更新機能
-https://gyazo.com/2550f58cc9d1220410bbe2c3374227a1
-削除機能
-https://gyazo.com/4131407060ca3361c63c02cac8fd7e3a
-マイページ機能
-https://gyazo.com/10a594d6e548bb2e355030e8037068bf
-お気に入り機能
-https://gyazo.com/19ff57fef082c972e6e1641393d93e8c
-管理者機能
-https://gyazo.com/3a3cd634d5f204b9c5745c8a344724fe
-画面遷移機能
-https://gyazo.com/224633918573ab871114899e9473dc3b
-検索機能
-https://gyazo.com/49fecf1e3680f22ff64c9f72a08ff702
-Basic認証
-https://gyazo.com/abee190f401fc69649dd76cc8b9e7baf
+ ！[モアイ](https://github.com/komagenn/heritage1/blob/master/image.100.jpeg)<br>
+・アプリケーション名<br>
+  heritage1<br>
+・アプリケーション概要<br>
+  南米の世界遺産を一覧できるアプリケーションです。<br>
+・URL<br>
+  https://heritage1.herokuapp.com/<br>
+・テスト用アカウント<br>
 
-・データベースの設計
+  Basic認証<br>
+  ユーザー名：admin<br>
+  パスワード：2233<br>
+  管理者：
+   メールアドレス：tt@test   パスワード：tamago55<br>
+  ユーザー：
+   メールアドレス：test@test パスワード :tamago55<br>
+・利用方法<br>
+  南米の世界遺産について画像と共に一覧したい時に国ごとで閲覧が可能です。<br>
+・目指した課題解決<br>
+  世界遺産は現在1150個以上あります。<br>
+  しかし、知っている数は100個もいかないと思います。<br>
+  そのため、知らない世界遺産についても国を選ぶだけで知ることができます。<br>
+  また南米の世界遺産に関しては、写真付きで説明も載っているサイトというのは、私が探した中ではありませんでした。<br>
+  そこで、南米の世界遺産について一覧を作ることで、より気軽に世界遺産について知ることができるきっかけが作れると考えました。<br>
+・洗い出した要件<br>
+  ユーザー管理機能<br>
+  投稿機能<br>
+  一覧機能<br>
+  詳細機能<br>
+  編集・更新機能<br>
+  削除機能<br>
+  マイページ機能<br>
+  お気に入り機能<br>
+  管理者機能<br>
+  画面遷移機能<br>
+  検索機能<br>
+・実装した機能についての画像やGIFおよびその説明<br>
+ユーザー管理機能<br>
+https://gyazo.com/ddf71cf9e1293463c7be3b15d6d44860<br>
+投稿機能<br>
+https://gyazo.com/74dc3c5221f5725e110b845b16e10f04<br>
+一覧機能<br>
+https://gyazo.com/30afd2e64c1113a573251a0fd85f3e5d<br>
+詳細機能<br>
+https://gyazo.com/b461e0644943dc6b767a3e4ff7734edb<br>
+編集・更新機能<br>
+https://gyazo.com/2550f58cc9d1220410bbe2c3374227a1<br>
+削除機能<br>
+https://gyazo.com/4131407060ca3361c63c02cac8fd7e3a<br>
+マイページ機能<br>
+https://gyazo.com/10a594d6e548bb2e355030e8037068bf<br>
+お気に入り機能<br>
+https://gyazo.com/19ff57fef082c972e6e1641393d93e8c<br>
+管理者機能<br>
+https://gyazo.com/3a3cd634d5f204b9c5745c8a344724fe<br>
+画面遷移機能<br>
+https://gyazo.com/224633918573ab871114899e9473dc3b<br>
+検索機能<br>
+https://gyazo.com/49fecf1e3680f22ff64c9f72a08ff702<br>
+Basic認証<br>
+https://gyazo.com/abee190f401fc69649dd76cc8b9e7baf<br>
+
+・データベースの設計<br>
 [![Image from Gyazo](https://i.gyazo.com/38689c026fdad3150e91e0354ac5470e.png)](https://gyazo.com/38689c026fdad3150e91e0354ac5470e)
-・ローカルでの動作方法
 ## userテーブル
 
 |Column                |Type       |Options    |
