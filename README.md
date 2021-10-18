@@ -36,7 +36,7 @@
 ユーザー管理機能<br>
 [![Image from Gyazo](https://i.gyazo.com/ddf71cf9e1293463c7be3b15d6d44860.gif)](https://gyazo.com/ddf71cf9e1293463c7be3b15d6d44860)<br>
 投稿機能<br>
-https://gyazo.com/74dc3c5221f5725e110b845b16e10f04<br>
+[![Image from Gyazo](https://i.gyazo.com/74dc3c5221f5725e110b845b16e10f04.jpg)](https://gyazo.com/74dc3c5221f5725e110b845b16e10f04)<br>
 一覧機能<br>
 https://gyazo.com/30afd2e64c1113a573251a0fd85f3e5d<br>
 詳細機能<br>
