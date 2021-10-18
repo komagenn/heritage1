@@ -1,7 +1,7 @@
 # アプリケーション説明
-・アプリケーション名<br>
-  heritage1<br>
-・アプリケーション概要<br>
+◆アプリケーション名
+  heritage1
+◆アプリケーション概要
   南米の世界遺産を一覧できるアプリケーションです。<br>
 ・URL<br>
   https://heritage1.herokuapp.com/<br>
