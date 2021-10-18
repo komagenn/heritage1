@@ -46,7 +46,7 @@
 削除機能<br>
 [![Image from Gyazo](https://i.gyazo.com/4131407060ca3361c63c02cac8fd7e3a.gif)](https://gyazo.com/4131407060ca3361c63c02cac8fd7e3a)<br>
 マイページ機能<br>
-https://gyazo.com/10a594d6e548bb2e355030e8037068bf<br>
+[![Image from Gyazo](https://i.gyazo.com/10a594d6e548bb2e355030e8037068bf.gif)](https://gyazo.com/10a594d6e548bb2e355030e8037068bf)<br>
 お気に入り機能<br>
 https://gyazo.com/19ff57fef082c972e6e1641393d93e8c<br>
 管理者機能<br>
