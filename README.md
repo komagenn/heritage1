@@ -54,7 +54,7 @@
 画像遷移機能<br>
 [![Image from Gyazo](https://i.gyazo.com/224633918573ab871114899e9473dc3b.gif)](https://gyazo.com/224633918573ab871114899e9473dc3b)<br>
 検索機能<br>
-[![Image from Gyazo](https://i.gyazo.com/49fecf1e3680f22ff64c9f72a08ff702.gif)](https://gyazo.com/49fecf1e3680f22ff64c9f72a08ff702)<br>
+[![Image from Gyazo](https://i.gyazo.com/49fecf1e3680f22ff64c9f72a08ff702.gif)](https://gyazo.com/49fecf1e3680f22ff64c9f72a08ff702) <br>
 Basic認証<br>
 [![Image from Gyazo](https://i.gyazo.com/abee190f401fc69649dd76cc8b9e7baf.png)](https://gyazo.com/abee190f401fc69649dd76cc8b9e7baf)<br>
 
