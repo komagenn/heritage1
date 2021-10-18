@@ -34,29 +34,29 @@
   検索機能<br>
 ◆実装した機能についての画像やGIF<br>
 ユーザー管理機能<br>
-[![Image from Gyazo](https://i.gyazo.com/ddf71cf9e1293463c7be3b15d6d44860.gif)](https://gyazo.com/ddf71cf9e1293463c7be3b15d6d44860)<br>
+https://gyazo.com/ddf71cf9e1293463c7be3b15d6d44860<br>
 投稿機能<br>
-[![Image from Gyazo](https://i.gyazo.com/74dc3c5221f5725e110b845b16e10f04.jpg)](https://gyazo.com/74dc3c5221f5725e110b845b16e10f04)<br>
+https://gyazo.com/74dc3c5221f5725e110b845b16e10f04<br>
 一覧機能<br>
-[![Image from Gyazo](https://i.gyazo.com/30afd2e64c1113a573251a0fd85f3e5d.gif)](https://gyazo.com/30afd2e64c1113a573251a0fd85f3e5d)<br>
+https://gyazo.com/30afd2e64c1113a573251a0fd85f3e5d<br>
 詳細機能<br>
-[![Image from Gyazo](https://i.gyazo.com/b461e0644943dc6b767a3e4ff7734edb.gif)](https://gyazo.com/b461e0644943dc6b767a3e4ff7734edb)<br>
+https://gyazo.com/b461e0644943dc6b767a3e4ff7734edb<br>
 編集・更新機能<br>
-[![Image from Gyazo](https://i.gyazo.com/2550f58cc9d1220410bbe2c3374227a1.gif)](https://gyazo.com/2550f58cc9d1220410bbe2c3374227a1)<br>
+https://gyazo.com/2550f58cc9d1220410bbe2c3374227a1<br>
 削除機能<br>
-[![Image from Gyazo](https://i.gyazo.com/4131407060ca3361c63c02cac8fd7e3a.gif)](https://gyazo.com/4131407060ca3361c63c02cac8fd7e3a)<br>
+https://gyazo.com/4131407060ca3361c63c02cac8fd7e3a<br>
 マイページ機能<br>
-[![Image from Gyazo](https://i.gyazo.com/10a594d6e548bb2e355030e8037068bf.gif)](https://gyazo.com/10a594d6e548bb2e355030e8037068bf)<br>
+https://gyazo.com/10a594d6e548bb2e355030e8037068bf<br>
 お気に入り機能<br>
-[![Image from Gyazo](https://i.gyazo.com/19ff57fef082c972e6e1641393d93e8c.gif)](https://gyazo.com/19ff57fef082c972e6e1641393d93e8c)<br>
+https://gyazo.com/19ff57fef082c972e6e1641393d93e8c<br>
 管理者機能<br>
-[![Image from Gyazo](https://i.gyazo.com/3a3cd634d5f204b9c5745c8a344724fe.jpg)](https://gyazo.com/3a3cd634d5f204b9c5745c8a344724fe)<br>
+https://gyazo.com/3a3cd634d5f204b9c5745c8a344724fe<br>
 画像遷移機能<br>
-[![Image from Gyazo](https://i.gyazo.com/224633918573ab871114899e9473dc3b.gif)](https://gyazo.com/224633918573ab871114899e9473dc3b)<br>
+https://gyazo.com/224633918573ab871114899e9473dc3b<br>
 検索機能<br>
-[![Image from Gyazo](https://i.gyazo.com/49fecf1e3680f22ff64c9f72a08ff702.gif)](https://gyazo.com/49fecf1e3680f22ff64c9f72a08ff702) <br>
+https://gyazo.com/49fecf1e3680f22ff64c9f72a08ff702<br>
 Basic認証<br>
-[![Image from Gyazo](https://i.gyazo.com/abee190f401fc69649dd76cc8b9e7baf.png)](https://gyazo.com/abee190f401fc69649dd76cc8b9e7baf)<br>
+https://gyazo.com/abee190f401fc69649dd76cc8b9e7baf<br>
 
 ◆データベースの設計<br>
 [![Image from Gyazo](https://i.gyazo.com/38689c026fdad3150e91e0354ac5470e.png)](https://gyazo.com/38689c026fdad3150e91e0354ac5470e)
