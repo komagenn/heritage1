@@ -38,7 +38,7 @@
 投稿機能<br>
 [![Image from Gyazo](https://i.gyazo.com/74dc3c5221f5725e110b845b16e10f04.jpg)](https://gyazo.com/74dc3c5221f5725e110b845b16e10f04)<br>
 一覧機能<br>
-[![Image from Gyazo]（https://i.gyazo.com/b461e0644943dc6b767a3e4ff7734edb.gif）　<br>
+[![Image from Gyazo](https://i.gyazo.com/30afd2e64c1113a573251a0fd85f3e5d.gif)](https://gyazo.com/30afd2e64c1113a573251a0fd85f3e5d)<br>
 詳細機能<br>
 [![Image from Gyazo](https://i.gyazo.com/b461e0644943dc6b767a3e4ff7734edb.gif)](https://gyazo.com/b461e0644943dc6b767a3e4ff7734edb)<br>
 編集・更新機能<br>
