@@ -48,7 +48,7 @@
 マイページ機能<br>
 [![Image from Gyazo](https://i.gyazo.com/10a594d6e548bb2e355030e8037068bf.gif)](https://gyazo.com/10a594d6e548bb2e355030e8037068bf)<br>
 お気に入り機能<br>
-https://gyazo.com/19ff57fef082c972e6e1641393d93e8c<br>
+[![Image from Gyazo](https://i.gyazo.com/19ff57fef082c972e6e1641393d93e8c.gif)](https://gyazo.com/19ff57fef082c972e6e1641393d93e8c)<br>
 管理者機能<br>
 https://gyazo.com/3a3cd634d5f204b9c5745c8a344724fe<br>
 画面遷移機能<br>
