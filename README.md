@@ -38,7 +38,7 @@
 投稿機能<br>
 [![Image from Gyazo](https://i.gyazo.com/74dc3c5221f5725e110b845b16e10f04.jpg)](https://gyazo.com/74dc3c5221f5725e110b845b16e10f04)<br>
 一覧機能<br>
-https://camo.githubusercontent.com/8562b16b954c1a78b93617b5eb2c5d48c91df1d59795ff5c3ac90da407a9ed6e/68747470733a2f2f692e6779617a6f2e636f6d2f33306166643265363463313131336135373332353161306664383566336535642e676966　<br>
+[![Image from Gyazo](https://i.gyazo.com/30afd2e64c1113a573251a0fd85f3e5d.gif)](https://gyazo.com/30afd2e64c1113a573251a0fd85f3e5d)　<br>
 詳細機能<br>
 [![Image from Gyazo](https://i.gyazo.com/b461e0644943dc6b767a3e4ff7734edb.gif)](https://gyazo.com/b461e0644943dc6b767a3e4ff7734edb)<br>
 編集・更新機能<br>
