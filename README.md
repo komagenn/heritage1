@@ -42,7 +42,7 @@
 詳細機能<br>
 [![Image from Gyazo](https://i.gyazo.com/b461e0644943dc6b767a3e4ff7734edb.gif)](https://gyazo.com/b461e0644943dc6b767a3e4ff7734edb)<br>
 編集・更新機能<br>
-https://gyazo.com/2550f58cc9d1220410bbe2c3374227a1<br>
+[![Image from Gyazo](https://i.gyazo.com/2550f58cc9d1220410bbe2c3374227a1.gif)](https://gyazo.com/2550f58cc9d1220410bbe2c3374227a1)<br>
 削除機能<br>
 https://gyazo.com/4131407060ca3361c63c02cac8fd7e3a<br>
 マイページ機能<br>
